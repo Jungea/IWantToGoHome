@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <!-- <link rel="stylesheet" href="kkstyle.css" type="text/css"> -->
 
-
-	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="script.js"></script>
 
     <style>
@@ -26,107 +28,33 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-xl">
-          <a class="navbar-brand" href="#">IWantToGoHome</a>
+          <a class="navbar-brand" href="index.html">IWantToGoHome</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
       
           <div class="collapse navbar-collapse" id="navbarsExample07XL">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">MNIST</a>
+              <li class="nav-item">
+                <a class="nav-link" href="mnist.html">MNIST</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">RPS</a>
-              
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Info</a>
+              </li>
             </ul>
-            <form class="form-inline my-2 my-md-0">
-              <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-            </form>
+
           </div>
         </div>
       </nav>
 
-
-    <div class="container mt-4">
-        <h1>MNIST</h1>
-
-        <div class="container mt-5">
-
-            <!-- Canvas -->
-            <div class="row mb-3">
-                <div class="col mb-2 text-center">
-                    <canvas id="myCanvas" width="400" height="400"></canvas>
-                </div>
-            </div>
-
-            <!-- Button -->
-            <div class="row">
-                <div class="col">
-                    <button type="button" id="clearBtn" class="btn btn-secondary btn-block">Clear</button>
-                </div>
-                <div class="col"> 
-                    <button type="button" id="predictBtn" class="btn btn-danger btn-block">Predict</button>
-                </div>
-            </div>
-            
-            <hr>
-
-        </div>
-        <br><br>
-
-        <!-- 결과 -->
-        <div class="container mb-5">
-
-            <!-- 예측 숫자 -->
-            <div class="row mb-4">
-                <div class="col text-center h3">
-                    예측 숫자 : <span id="predict_number"></span>
-                </div>
-            </div>
-
-            <!-- 그린 숫자를 이미지로 -->
-            <div class="row mb-4">
-                <div class="col">
-                    <img id="canvasimg" class="img-thumbnail mx-auto d-block" src=""/>
-                </div>
-                    
-            </div>
-
-            <!-- 결과 테이블 -->
-            <div class="row">
-                <div class="col">
-                    <table id="result_table" class="table table-bordered table-striped text-overflow">
-                        <thead>
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col">0</th>
-                            <th scope="col">1</th>
-                            <th scope="col">2</th>
-                            <th scope="col">3</th>
-                            <th scope="col">4</th>
-                            <th scope="col">5</th>
-                            <th scope="col">6</th>
-                            <th scope="col">7</th>
-                            <th scope="col">8</th>
-                            <th scope="col">9</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="tr_result1">
-                                <th scope="row">확률</th>
-                            </tr>
-                            <tr class="tr_result2">
-                                <th scope="row">확률(round)</th>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            
-        </div>
-
+    <div class="container">
+        <img src="https://pbs.twimg.com/media/EE0R8XcU0AAlbth.jpg" class="img-fluid" alt="Responsive image">
     </div>
+
+    
 
 </body>
 </html>

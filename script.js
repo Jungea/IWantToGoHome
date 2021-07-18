@@ -4,6 +4,8 @@ var Doc; // XML 문서 DOM 복합 객체 참조를 위한 전역 변수
 
 $(document).ready(function () {
     
+    // $('.collapse').collapse('toggle')
+
     /*
      * canvas
      */
