@@ -1,0 +1,22 @@
+canvas {
+    border: 1px solid gray;
+    background-color: white; 
+    /* width: 100%;
+    height: auto; */
+    cursor: url('cursor.cur'), auto;
+}
+
+/* 테이블 내용 말줄임 */
+#result_table {
+    table-layout: fixed;
+}
+#result_table tbody td {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 예측값 컬럼 표시 */
+.predict_column {
+    background-color: lightcoral;
+}
