@@ -99,13 +99,11 @@ $(document).ready(function () {
         context.fillRect(0, 0, canvas.width, canvas.height);
         context.beginPath();
 
-        // 결과표 지우기
-        $('td').remove();
-        $('.predict_column').removeClass('predict_column')
-
         // 통신
         $.ajax({
-            url: "http://5d40d067192a.ngrok.io/predict",
+            // url: "http://127.0.0.1:5000/mnist/predict",
+            url: "https://home-mnist.herokuapp.com/mnist/predict",
+
             type: "post",
             data : formdata,
             dataType: "json",
@@ -116,6 +114,10 @@ $(document).ready(function () {
             // 성공시
             success: function (response) {
                 console.log("호출성공");
+
+                // 결과표 지우기
+                $('td').remove();
+                $('.predict_column').removeClass('predict_column')
 
                 dataList = response.result[0]
     
